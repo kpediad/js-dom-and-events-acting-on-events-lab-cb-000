@@ -9,7 +9,7 @@ function retrieveEmployeeInformation() {
   return $('input[name="name"]').get(0).value;
 }
 function addNewElementAsLi() {
-  $('.employee-list').get(0).append(`<li>${retrieveEmployeeInformation()}</li>`);
+  $('.employee-list').get(0).prepend(`<li>${retrieveEmployeeInformation()}</li>`);
 }
 function addNewLiOnClick() {
   addNewElementAsLi();
