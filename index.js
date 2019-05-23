@@ -15,9 +15,12 @@ function addNewLiOnClick() {
   addNewElementAsLi();
   $('input[name="name"]').get(0).value = "";
 }
-function clearEmployeeListOnLinkClick() {
+function clearList() {
   $('.employee-list').get(0).innerHTML = '';
 }
+function clearEmployeeListOnLinkClick() {
+  $('a[href="#"]').get(0).addEventListener('click', clearList);
+}
 
-$('a[href="#"]').get(0).addEventListener('click', clearEmployeeListOnLinkClick);
+
 $('input[type="submit"]').get(0).addEventListener('click', addNewLiOnClick);
