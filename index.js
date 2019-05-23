@@ -17,12 +17,7 @@ function addNewLiOnClick() {
 }
 function clearEmployeeListOnLinkClick() {
   $('.employee-list').get(0).innerHTML = '';
-  //let listElements = $('.employee-list ');
-  //alert('skata');
-  //for(let i=0; i<listElements.length; i++) {
-    //listElements[i].remove();
-  //}
 }
 
-$('a[href="#"]').addEventListener('click', clearEmployeeListOnLinkClick);
-//$('input[type="submit"]').addEventListener('click', addNewLiOnClick);
+$('a[href="#"]').get(0).addEventListener('click', clearEmployeeListOnLinkClick);
+$('input[type="submit"]').get(0).addEventListener('click', addNewLiOnClick);
