@@ -25,4 +25,4 @@ function clearEmployeeListOnLinkClick() {
 }
 
 $('a[href="#"]').addEventListener('click', clearEmployeeListOnLinkClick);
-$('input[type="submit"]').addEventListener('click', addNewLiOnClick);
+//$('input[type="submit"]').addEventListener('click', addNewLiOnClick);
