@@ -17,6 +17,7 @@ function addNewLiOnClick() {
 }
 function clearEmployeeListOnLinkClick() {
   let listElements = $('.employee-list li');
+  alert('skata');
   for(let i=0; i<listElements.length; i++) {
     listElements[i].remove();
   }
