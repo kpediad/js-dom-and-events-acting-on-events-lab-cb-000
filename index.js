@@ -3,6 +3,8 @@ function preventRefreshOnSubmit(){
       event.preventDefault()
     })
 }
+preventRefreshOnSubmit()
+
 function retrieveEmployeeInformation() {
   return $('input[name="name"]').get(0).value;
 }
@@ -15,4 +17,4 @@ function addNewLiOnClick() {
 }
 
 $('input[type="submit"]').get(0).addEventListener('click', addNewLiOnClick);
-preventRefreshOnSubmit()
+
