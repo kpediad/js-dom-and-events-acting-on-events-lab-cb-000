@@ -16,11 +16,12 @@ function addNewLiOnClick() {
   $('input[name="name"]').get(0).value = "";
 }
 function clearEmployeeListOnLinkClick() {
-  let listElements = $('.employee-list li');
-  alert('skata');
-  for(let i=0; i<listElements.length; i++) {
-    listElements[i].remove();
-  }
+  $('.employee-list').innerHTML = '';
+  //let listElements = $('.employee-list ');
+  //alert('skata');
+  //for(let i=0; i<listElements.length; i++) {
+    //listElements[i].remove();
+  //}
 }
 
 //$('a[href="#"]').addEventListener('click', clearEmployeeListOnLinkClick);
