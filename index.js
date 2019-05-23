@@ -15,5 +15,12 @@ function addNewLiOnClick() {
   addNewElementAsLi();
   $('input[name="name"]').get(0).value = "";
 }
+function clearEmployeeListOnLinkClick() {
+  let listElements = $('.employee-list li');
+  for(let i=0; i<listElements.length; i++) {
+    listElements[i].remove();
+  }
+}
 
+$('a').addEventListener('click', clearEmployeeListOnLinkClick);
 $('input[type="submit"]').addEventListener('click', addNewLiOnClick);
