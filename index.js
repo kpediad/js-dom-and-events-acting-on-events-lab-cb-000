@@ -13,7 +13,7 @@ function addNewElementAsLi() {
 }
 function addNewLiOnClick() {
   addNewElementAsLi();
-  $('input[name="name"]').value = "";
+  $('input[name="name"]').get[0].value = "";
 }
 
 $('input[type="submit"]').addEventListener('click', addNewLiOnClick);
