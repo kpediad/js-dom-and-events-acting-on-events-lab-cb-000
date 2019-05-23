@@ -16,7 +16,7 @@ function addNewLiOnClick() {
   $('input[name="name"]').get(0).value = "";
 }
 function clearEmployeeListOnLinkClick() {
-  $('.employee-list').innerHTML = '';
+  $('.employee-list').get(0).innerHTML = '';
   //let listElements = $('.employee-list ');
   //alert('skata');
   //for(let i=0; i<listElements.length; i++) {
