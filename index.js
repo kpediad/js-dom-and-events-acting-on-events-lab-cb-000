@@ -17,4 +17,3 @@ function addNewLiOnClick() {
 }
 
 $('input[type="submit"]').get(0).addEventListener('click', addNewLiOnClick);
-
